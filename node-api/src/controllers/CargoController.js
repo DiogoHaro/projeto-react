@@ -17,7 +17,7 @@ module.exports  = {
     async show(req,res){
         const cargo = await Cargo.findById(req.params.id);
 
-        return res.json(Cargo);
+        return res.json(cargo);
     },
     async update(req,res){
         const cargo = await Cargo.findByIdAndUpdate(req.params.id, req.body, {new:true});

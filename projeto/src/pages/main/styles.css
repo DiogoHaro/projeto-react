@@ -11,3 +11,96 @@
     padding: 20px;
     margin-bottom: 20px;
 }
+
+.estado-list .actions{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.estado-list .actions button{
+    padding: 10px;
+    border-radius:  5px;
+    border: 0;
+    background: #da552f;
+    color:#FFF;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.estado-list .actions button:hover {
+    opacity: 0.7;
+}
+
+.estado-list .actions button[disabled]{
+    opacity: 0.5;
+    cursor: default;
+}
+
+.estado-list .actions button[disabled]:hover{
+    opacity: 0.5;
+}
+
+.estado-list article a {
+    height: 42px;
+    border-radius: 5px;
+    border: 2px solid #da552f;
+    background: none;
+    margin-top: 10px;
+    color: #da552f;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.estado-list article a:hover {
+    background: #da552f;
+    color: #FFF;
+
+}
+
+.estado-list article button {
+    height: 42px;
+    border-radius: 5px;
+    border: 2px solid #da552f;
+    background: none;
+    margin-top: 10px;
+    color: #da552f;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.estado-list article button:hover {
+    background: #da552f;
+    color: #FFF;
+}
+
+a{
+    height: 42px;
+    border-radius: 5px;
+    border: 2px solid #da552f;
+    background: none;
+    margin-top: 10px;
+    color: #da552f;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+a:hover {
+    background: #da552f;
+    color: #FFF;
+}
