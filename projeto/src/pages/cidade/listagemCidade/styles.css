@@ -1,0 +1,106 @@
+.cidade-list{
+    max-width: 700px;
+    margin: 20px auto 0;
+    padding: 0 20px;
+}
+
+.cidade-list article{
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.cidade-list .actions{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.cidade-list .actions button{
+    padding: 10px;
+    border-radius:  5px;
+    border: 0;
+    background: #da552f;
+    color:#FFF;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cidade-list .actions button:hover {
+    opacity: 0.7;
+}
+
+.cidade-list .actions button[disabled]{
+    opacity: 0.5;
+    cursor: default;
+}
+
+.cidade-list .actions button[disabled]:hover{
+    opacity: 0.5;
+}
+
+.cidade-list article a {
+    height: 42px;
+    border-radius: 5px;
+    border: 2px solid #da552f;
+    background: none;
+    margin-top: 10px;
+    color: #da552f;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.cidade-list article a:hover {
+    background: #da552f;
+    color: #FFF;
+
+}
+
+.cidade-list article button {
+    height: 42px;
+    border-radius: 5px;
+    border: 2px solid #da552f;
+    background: none;
+    margin-top: 10px;
+    color: #da552f;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.cidade-list article button:hover {
+    background: #da552f;
+    color: #FFF;
+}
+
+a{
+    height: 42px;
+    border-radius: 5px;
+    border: 2px solid #da552f;
+    background: none;
+    margin-top: 10px;
+    color: #da552f;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+a:hover {
+    background: #da552f;
+    color: #FFF;
+}

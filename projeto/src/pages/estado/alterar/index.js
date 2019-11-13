@@ -2,6 +2,7 @@ import  React, {Component} from 'react';
 import api from '../../../services/api.js';
 import './styles.css';
 import {toast} from "react-toastify";
+import { Link } from 'react-router-dom';
 export default class Alterar extends  Component{
     state = {
         estado: {},
@@ -33,6 +34,7 @@ export default class Alterar extends  Component{
                 <input type="text" name="nome" value={this.state.nome}
                        onChange={e => this.setState({nome: e.target.value})}/>
                 <button onClick={()=>{this.altera(estado._id)}}>Alterar</button>
+                <Link to={`/`}>Voltar</Link>
             </div>
         )
     }

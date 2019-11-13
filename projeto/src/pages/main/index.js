@@ -69,6 +69,7 @@ export default  class Main extends  Component{
                     </ul>
                 </nav>
                 <Link to={`/incluir`}>Incluir</Link>
+                <h1>Estados</h1>
                 {estados.map(estado => (
                     <article key={estado._id}>
                         <strong>{estado.nome}</strong>

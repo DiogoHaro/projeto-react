@@ -1,6 +1,7 @@
 import  React, {Component} from 'react';
 import api from './../../../services/api';
 import './styles.css';
+import { Link } from 'react-router-dom';
 import { toast } from "react-toastify";
 export default class FormularioCargo extends  Component{
     state = {
@@ -30,6 +31,7 @@ export default class FormularioCargo extends  Component{
                 <label for="valor">Salário:</label>
                 <input type="text" name="valor" value={this.state.salario}  onChange={e => this.setState({salario: e.target.value}) }/>
                 <button onClick={this.insere}>Inserir</button>
+                <Link to={`/cargos`}>Voltar</Link>
             </div>
         )
     }

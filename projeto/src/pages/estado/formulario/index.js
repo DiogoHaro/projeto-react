@@ -2,6 +2,7 @@ import  React, {Component} from 'react';
 import api from '../../../services/api';
 import './styles.css';
 import { toast } from "react-toastify";
+import { Link } from 'react-router-dom';
 export default class Formulario extends  Component{
     state = {
         estado: {},
@@ -26,7 +27,7 @@ export default class Formulario extends  Component{
                     <label for="nome">Nome:</label>
                     <input type="text" name="nome" value={this.state.nome}  onChange={e => this.setState({nome: e.target.value}) }/>
                     <button onClick={this.insere}>Inserir</button>
-
+                     <Link to={`/`}>Voltar</Link>
             </div>
         )
     }

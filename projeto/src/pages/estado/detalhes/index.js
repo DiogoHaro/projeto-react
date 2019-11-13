@@ -1,6 +1,7 @@
 import  React, {Component} from 'react';
 import api from '../../../services/api';
 import './styles.css';
+import { Link } from 'react-router-dom';
 export default class Detalhes extends  Component{
     state = {
         estado: {},
@@ -18,7 +19,8 @@ export default class Detalhes extends  Component{
 
         return(
             <div className="estado-info">
-                <h1>{estado.nome}</h1>
+                <h1>Estado:{estado.nome}</h1>
+                <Link to={`/`}>Voltar</Link>
             </div>
         )
     }

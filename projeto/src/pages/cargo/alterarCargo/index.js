@@ -2,6 +2,7 @@ import  React, {Component} from 'react';
 import api from './../../../services/api';
 import './styles.css';
 import {toast} from "react-toastify";
+import { Link } from 'react-router-dom';
 export default class AlterarCargo extends  Component{
     state = {
         cargo: {},
@@ -39,6 +40,7 @@ export default class AlterarCargo extends  Component{
                 <input type="text" name="valor" value={salario}
                        onChange={e => this.setState({salario: e.target.value})}/>
                 <button onClick={()=>{this.altera(cargo._id)}}>Alterar</button>
+                <Link to={`/cargos`}>Voltar</Link>
             </div>
         )
     }

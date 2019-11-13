@@ -69,11 +69,11 @@ export default  class Listagem extends  Component{
                     </ul>
                 </nav>
                 <Link to={`/cargos/incluir`}>Incluir</Link>
+                <h1>Cargos</h1>
                 {cargo.map(cargo => (
                     <article key={cargo._id}>
-                        <strong>Cargo:{cargo.nome}</strong>
-                        <p><strong>Salário:{cargo.salario}</strong></p>
-                        <Link to={`/cargos/${cargo._id}`}>Acessar</Link>
+                        <strong>{cargo.nome}</strong>
+                        <Link to={`/cargos/${cargo._id}`}>Detalhes</Link>
                         <button  onClick={() => this.deletacargo(cargo._id)}>Deletar</button>
                         <Link to={`/cargos/alterar/${cargo._id}`}>Alterar</Link>
                     </article>

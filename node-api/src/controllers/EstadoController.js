@@ -5,7 +5,7 @@ const Estado = mongoose.model('Estado');
 module.exports  = {
   async index(req, res){
       const { page = 1 } = req.query;
-      const estados = await Estado.paginate({},{ page, limit:10});
+      const estados = await Estado.paginate({},{ page, limit:5});
 
       return res.json(estados);
   },

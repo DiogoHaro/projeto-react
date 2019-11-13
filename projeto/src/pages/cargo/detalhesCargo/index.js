@@ -1,6 +1,7 @@
 import  React, {Component} from 'react';
 import api from './../../../services/api';
 import './styles.css';
+import { Link } from 'react-router-dom';
 export default class DetalhesCargo extends  Component{
     state = {
         cargo: {},
@@ -18,9 +19,11 @@ export default class DetalhesCargo extends  Component{
 
         return(
             <div className="cargo-info">
-                <h1>{cargo.nome}</h1>
-                <h1>{cargo.salario}</h1>
+                <h1>Cargo:{cargo.nome}</h1>
+                <h1>Salário: R$ {cargo.salario}</h1>
+                <Link to={`/cargos`}>Voltar</Link>
             </div>
+
         )
     }
 }
