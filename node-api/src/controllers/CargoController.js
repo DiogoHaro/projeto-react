@@ -9,6 +9,11 @@ module.exports  = {
 
         return res.json(cargos);
     },
+    async todosRegistros(req, res){
+        const cargos = await Cargo.find();
+
+        return res.json(cargos);
+    },
     async store(req, res){
         const cargo = await Cargo.create(req.body);
 

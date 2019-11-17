@@ -9,6 +9,11 @@ module.exports  = {
 
         return res.json(cidades);
     },
+    async todosRegistros(req, res){
+      const cidades = await Cidade.find();
+
+      return res.json(cidades);
+    },
     async store(req, res){
         const cidade = await Cidade.create(req.body);
 

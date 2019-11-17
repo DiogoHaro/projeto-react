@@ -2,40 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53a145c5-6a0a-42df-81e1-cbe1ab5d5b24" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../node-api/src/controllers/CidadeController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../node-api/src/controllers/FuncionarioController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../node-api/src/models/Cidade.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../node-api/src/models/Funcionario.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/cidade/alterarCidade/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/cidade/alterarCidade/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/cidade/detalhesCidade/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/cidade/detalhesCidade/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/cidade/formularioCidade/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/cidade/formularioCidade/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/cidade/listagemCidade/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/cidade/listagemCidade/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/funcionario/alterarFuncionario/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/funcionario/alterarFuncionario/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/funcionario/detalhesFuncionario/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/funcionario/detalhesFuncionario/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/funcionario/formularioFuncionario/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/funcionario/formularioFuncionario/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/funcionario/listagemFuncionario/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/funcionario/listagemFuncionario/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../node-api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../node-api/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../node-api/src/controllers/CargoController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../node-api/src/controllers/CargoController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node-api/src/controllers/CidadeController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../node-api/src/controllers/CidadeController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../node-api/src/controllers/EstadoController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../node-api/src/controllers/EstadoController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../node-api/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/../node-api/src/routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/cargo/alterarCargo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cargo/alterarCargo/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/cargo/detalhesCargo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cargo/detalhesCargo/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/cargo/formularioCargo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cargo/formularioCargo/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/cargo/listagem/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cargo/listagem/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/estado/alterar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/estado/alterar/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/estado/detalhes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/estado/detalhes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/estado/formulario/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/estado/formulario/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/main/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/main/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/cidade/alterarCidade/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cidade/alterarCidade/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/cidade/formularioCidade/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cidade/formularioCidade/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/funcionario/alterarFuncionario/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/funcionario/alterarFuncionario/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/funcionario/formularioFuncionario/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/funcionario/formularioFuncionario/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +29,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../node-api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -97,7 +73,8 @@
       <workItem from="1572809666028" duration="2399000" />
       <workItem from="1572814069497" duration="15549000" />
       <workItem from="1573428976482" duration="600000" />
-      <workItem from="1573597310072" duration="11672000" />
+      <workItem from="1573597310072" duration="11868000" />
+      <workItem from="1574028080333" duration="613000" />
     </task>
     <servers />
   </component>

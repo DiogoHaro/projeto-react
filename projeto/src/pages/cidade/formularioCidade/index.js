@@ -16,12 +16,9 @@ export default class FormularioCidade extends  Component{
     }
 
     loadEstados = async (page = 1) => {
-        const response = await api.get(`/estados`);
+        const response = await api.get(`/estados/all`);
 
-        const { docs } = response.data;
-
-
-        this.setState({estados: docs});
+        this.setState({estados: response.data});
     }
 
 

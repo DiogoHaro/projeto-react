@@ -16,9 +16,9 @@ export default class AlterarCidade extends  Component{
 
         const response = await api.get(`/cidades/${id}`);
         const sEstado = await api.get(`/estados/${response.data.estado}`);
-        const oEstados = await api.get(`/estados`);
+        const oEstados = await api.get(`/estados/all`);
 
-        this.setState({cidade: response.data,nome:response.data.nome,estados:oEstados.data.docs,estado:sEstado.data});
+        this.setState({cidade: response.data,nome:response.data.nome,estados:oEstados.data,estado:sEstado.data});
     }
 
     altera = async (id) => {

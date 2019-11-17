@@ -19,14 +19,14 @@ export default class AlterarFuncionario extends  Component{
         const response = await api.get(`/funcionarios/${id}`);
         const sCidade = await api.get(`/cidades/${response.data.cidade}`);
         const sCargo = await api.get(`/cargos/${response.data.cargo}`);
-        const oCidades = await api.get(`/cidades`);
-        const oCargos = await api.get(`/cargos`);
+        const oCidades = await api.get(`/cidades/all`);
+        const oCargos = await api.get(`/cargos/all`);
 
         this.setState({
             funcionario: response.data,
             nome:response.data.nome,
-            cidades:oCidades.data.docs,
-            cargos:oCargos.data.docs,
+            cidades:oCidades.data,
+            cargos:oCargos.data,
             cidade:sCidade.data,
             cargo:sCargo.data
         });
@@ -58,7 +58,7 @@ export default class AlterarFuncionario extends  Component{
                         <option key={cidade._id} selected={cidade._id == funcionario.cidade} value={cidade._id}>{cidade.nome}</option>
                     ))}
                 </select>
-                <label >Cidade:</label>
+                <label >Cargo:</label>
                 <select onChange={e => this.setState({cargo: e.target.value})}>
                     <option value=''>Selecione</option>
                     {cargos.map(cargo =>(

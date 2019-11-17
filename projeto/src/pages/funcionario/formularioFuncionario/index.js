@@ -18,12 +18,11 @@ export default class FormularioFuncionario extends  Component{
     }
 
     loadCidades = async (page = 1) => {
-        const response = await api.get(`/cidades`);
-        const oCargos  = await api.get(`/cargos`);
-        const { docs } = response.data;
+        const response = await api.get(`/cidades/all`);
+        const oCargos  = await api.get(`/cargos/all`);
 
 
-        this.setState({cidades: docs,cargos:oCargos.data.docs});
+        this.setState({cidades: response.data,cargos:oCargos.data});
     }
 
 
@@ -52,7 +51,7 @@ export default class FormularioFuncionario extends  Component{
                         <option key={cidade._id} value={cidade._id}>{cidade.nome}</option>
                     ))}
                 </select>
-                <label>Cargos:</label>
+                <label>Cargo:</label>
                 <select onChange={e => this.setState({cargo: e.target.value})}>
                     <option value=''>Selecione</option>
                     {cargos.map(cargo => (
