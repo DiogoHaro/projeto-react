@@ -6,7 +6,8 @@ export default class DetalhesFuncionario extends  Component{
     state = {
         funcionario: {},
         cidade:'',
-        cargo:''
+        cargo:'',
+        estado: ''
     };
 
     async componentDidMount(){
@@ -14,19 +15,27 @@ export default class DetalhesFuncionario extends  Component{
 
         const response = await api.get(`/funcionarios/${id}`);
         const cidades = await api.get(`/cidades/${response.data.cidade}`);
-        console.log(cidades);
         const cargos = await api.get(`/cargos/${response.data.cargo}`);
-        console.log(cargos)
-        this.setState({funcionario: response.data,cidade:cidades.data,cargo:cargos.data});
+        const estados = await api.get(`/estados/${cidades.data.estado}`); 
+        
+        this.setState(
+            {
+                funcionario: response.data,
+                cidade:cidades.data,
+                cargo:cargos.data,
+                estado: estados.data
+            });
     }
     render(){
-        const { funcionario,cidade,cargo } = this.state;
+        const { funcionario,cidade,cargo, estado } = this.state;
 
         return(
             <div className="funcionario-info">
                 <h1>Funcionário:{funcionario.nome}</h1>
                 <h1>Cidade:{cidade.nome}</h1>
                 <h1>Cargo:{cargo.nome}</h1>
+                <h1>Salário: R${cargo.salario}</h1>
+                <h1>Estado:{estado.nome}</h1>
                 <Link to={`/funcionarios`}>Voltar</Link>
             </div>
         )

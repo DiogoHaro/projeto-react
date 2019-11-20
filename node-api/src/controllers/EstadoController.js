@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const Estado = mongoose.model('Estado');
+const Cidade = mongoose.model('Cidade');
 
 
 module.exports  = {
@@ -30,6 +31,7 @@ module.exports  = {
       return res.send('Registro Alterado com sucesso!');
     },
     async delete(req,res){
+      
       const estado = await Estado.findByIdAndRemove(req.params.id);
 
       return res.send('Registro Excluído com sucesso!');
