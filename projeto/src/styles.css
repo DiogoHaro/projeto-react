@@ -10,3 +10,7 @@ body{
     background: #fafafa;
     color: #333333;
 }
+
+ul {
+    list-style: none;
+}

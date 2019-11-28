@@ -10,7 +10,10 @@ app.use(express.json());
 app.use(cors());
 // Iniciando o DB
 // mongoose.connect("mongodb://localhost:27017/nodeapi", { useNewUrlParser: true});
-mongoose.connect("mongodb+srv://trabalho:123@cluster0-frzyp.mongodb.net/test?retryWrites=true&w=majority", { useNewUrlParser: true});
+mongoose.connect('mongodb+srv://trabalho-marcondes:123@cluster0-mcoul.mongodb.net/trabalho-marcondes?retryWrites=true&w=majority', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+});
 
 // Iniciando models
 requireDir('./src/models');
